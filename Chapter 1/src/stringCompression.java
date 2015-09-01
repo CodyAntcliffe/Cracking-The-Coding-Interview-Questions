@@ -11,7 +11,7 @@ public class stringCompression {
 
 	public String compressString(String s){
 		
-		//Handle the case where it couldn't possible get smaller
+		//Handle the case where it couldn't possibly get smaller
 		if(s.length()<=2){
 			return s;
 		}
