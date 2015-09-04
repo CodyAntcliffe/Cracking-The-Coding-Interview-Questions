@@ -34,7 +34,6 @@ public class isPermutation {
 			}
 			myMap2.put(c, count);
 		}
-		
 		//Now that we have both strings in their respective hashmap, lets see if they match
 		
 		//First the case of whether the two are the same size, which would indicate one string has larger keyspace
