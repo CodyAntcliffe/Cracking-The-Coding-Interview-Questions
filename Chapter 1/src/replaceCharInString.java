@@ -8,7 +8,6 @@ import java.util.Arrays;
  */
 public class replaceCharInString {
 	/*Take one step further, and allowed it to be implemented using any character! Not just space.*/
-	
 	//Takes three inputs: the string(as a char array), the char to replace, and the true length of the string
 	public void replaceChar(char[] s, char rep, int length){
 		
