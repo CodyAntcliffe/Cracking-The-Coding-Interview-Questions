@@ -1,7 +1,5 @@
 /*
- * 
  * 1.2 Implement a function void reverse(String mes) which reverses a string
- * 
  */
 public class stringReverse {
 
