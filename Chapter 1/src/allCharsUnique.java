@@ -8,7 +8,6 @@ public class allCharsUnique {
 	
 	public Boolean isUnqiue(String mes){
 		/*if we can assume all chars are between 'a' and 'z', then we can simply do the following trival solution:
-		 * 
 			 * if(mes.length>=26)
 			 * 		return false;
 			 * 
