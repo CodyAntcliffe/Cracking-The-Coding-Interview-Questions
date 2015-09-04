@@ -8,7 +8,6 @@ import java.util.Arrays;
 
 public class stringCompression {
 
-
 	public String compressString(String s){
 		
 		//Handle the case where it couldn't possibly get smaller
