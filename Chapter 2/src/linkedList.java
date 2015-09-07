@@ -1,5 +1,5 @@
 /* 
- * This will be out default linkedList class
+ * This will be our default linkedList class
  */
 import java.util.*;
 public class linkedList {
@@ -24,7 +24,7 @@ public class linkedList {
 		 else
 			 addToLinkedList(node.next, v);
 	 }
-	
+	 
 	 //Method for printing unosrted linked list
 	 public void printList(linkedList L){
 		 
