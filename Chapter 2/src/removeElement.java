@@ -33,7 +33,6 @@ public class removeElement {
 			tail = tail.next;
 			head = head.next;
 		}
-		
 		//Now we can return the kth to last node
 		return head.val;
 	}
