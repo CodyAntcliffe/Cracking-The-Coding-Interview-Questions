@@ -1,5 +1,6 @@
 /* 
- * This will be out default linkedList class
+ * This will be our default linkedList class during this chapter.  
+ * Updated as needed.
  */
 import java.util.*;
 public class linkedList {
@@ -34,11 +35,5 @@ public class linkedList {
 		 }
 		 System.out.print(L.val+"-->");
 		 printList(L.next);
-	 }
-	 
-	 public static void main(String[] args){
-		 linkedList test = new linkedList('a');
-		 test.addToLinkedList(test, 'b');
-		 test.printList(test);
 	 }
 }
