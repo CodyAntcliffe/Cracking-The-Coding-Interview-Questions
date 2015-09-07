@@ -1,6 +1,5 @@
 /* 
- * This will be our default linkedList class during this chapter.  
- * Updated as needed.
+ * This will be out default linkedList class
  */
 import java.util.*;
 public class linkedList {
