@@ -1,10 +1,7 @@
 /* 
- * This will be our default linkedList class
- * 
- * Contains basic linked list operations.
+ * This will be out default linkedList class
  */
 import java.util.*;
-
 public class linkedList {
 
 	linkedList next; //Next node
@@ -37,25 +34,5 @@ public class linkedList {
 		 }
 		 System.out.print(L.val+"-->");
 		 printList(L.next);
-		
-	 }
-	 
-	 //Returns a specific node from our Linked List
-	 public linkedList getNode(linkedList head, int index){
-		 if(index < 0){
-				System.out.println("Please select an index >= 0");
-				return null;
-			}
-		 
-		 int i = 0;
-		 while(i < index){
-			 if(head.next == null){
-				 System.out.println("Node at index '"+index+"' does not exist.");
-				 return null;
-			 }
-			 head = head.next;
-			 i++;
-		 }
-		 return head;
 	 }
 }
