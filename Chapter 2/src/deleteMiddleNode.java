@@ -34,11 +34,11 @@ public class deleteMiddleNode {
 		myList.addToLinkedList(myList, 'f');
 		myList.addToLinkedList(myList, 'g');
 		
-		myList.printList(myList);
+		myList.printList();
 		System.out.println();
 		
 		deleteMiddleNode(myList.getNode(myList, 5));
-		myList.printList(myList);
+		myList.printList();
 		
 		
 	}

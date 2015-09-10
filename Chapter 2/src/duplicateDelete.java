@@ -44,12 +44,12 @@ public class duplicateDelete {
 		myList.addToLinkedList(myList, 'c');
 		
 		System.out.println("Original Linked List");
-		myList.printList(myList);
+		myList.printList();
 		
 		duplicateDelete test = new duplicateDelete();
 		test.deleteDuplicates(myList);
 		System.out.println("After duplicate removal:");
-		myList.printList(myList);
+		myList.printList();
 		
 		
 	}

@@ -28,7 +28,7 @@ public class linkedList {
 			 addToLinkedList(node.next, v);
 	 }
 	
-	 //Method for printing unosrted linked list
+	 //Method for printing unsorted linked list
 	 public void printList(linkedList L){
 		 
 		 if(L==null){
@@ -40,8 +40,21 @@ public class linkedList {
 		
 	 }
 	 
+	//Method for printing unsorted linked list
+		 public void printList(){
+			 
+			 if(this==null){
+				 System.out.println("");
+				 return;
+			 }
+			 System.out.print(this.val+"-->");
+			 printList(this.next);
+			
+		 }
+	 
 	 //Returns a specific node from our Linked List
 	 public linkedList getNode(linkedList head, int index){
+		 
 		 if(index < 0){
 				System.out.println("Please select an index >= 0");
 				return null;
