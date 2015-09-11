@@ -8,7 +8,7 @@ import java.util.*;
 public class linkedList {
 
 	linkedList next; //Next node
-	char val; //Our value
+	int val; //Our value
 	
 	//Node constructor
 	 public linkedList(char v){
@@ -17,8 +17,26 @@ public class linkedList {
 		this.val  = v;
 	}
 	 
+		//Node constructor
+	 public linkedList(int v){
+		 
+		this.next = null;
+		this.val  = v;
+	}
+	 
 	 //Method for adding new node to end of unsorted linked list
 	 public void addToLinkedList(linkedList node, char v){
+		 
+		 if(node.next == null){
+			 node.next = new linkedList(v);
+			 return;
+		 }
+		 else
+			 addToLinkedList(node.next, v);
+	 }
+	 
+	 //Method for adding new node to end of unsorted linked list
+	 public void addToLinkedList(linkedList node, int v){
 		 
 		 if(node.next == null){
 			 node.next = new linkedList(v);
@@ -49,7 +67,6 @@ public class linkedList {
 			 }
 			 System.out.print(this.val+"-->");
 			 printList(this.next);
-			
 		 }
 	 
 	 //Returns a specific node from our Linked List
