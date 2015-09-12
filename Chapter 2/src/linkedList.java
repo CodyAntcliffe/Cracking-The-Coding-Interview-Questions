@@ -8,7 +8,8 @@ import java.util.*;
 public class linkedList {
 
 	linkedList next; //Next node
-	int val; //Our value
+	char val; //Our value
+	//int val;
 	
 	//Node constructor
 	 public linkedList(char v){
