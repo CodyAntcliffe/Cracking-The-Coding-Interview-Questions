@@ -89,4 +89,36 @@ public class linkedList {
 		 }
 		 return head;
 	 }
+	 
+	 
+	 /* LINKED LIST REVERSAL METHOD */
+	 
+	 //Returns the linked list, but in reverse order
+	 public linkedList reverseLinkedList(){
+		 if(this == null){
+			 System.out.println("List is empty. Cannot reverse");
+			 return this;
+		 }
+		 if(this.next == null){
+			 System.out.println("List is only one node. Cannot reverse");
+			 return this;
+		 }
+		 linkedList LR = null;
+		 return reverseLinkedList(this,LR);
+	 }
+	
+	private static linkedList reverseLinkedList(linkedList L, linkedList LR){
+			
+		//Create our reverse linked list
+		linkedList temp = new linkedList(L.val);
+		temp.next = LR;
+		LR = temp;
+					
+		if(L.next!=null)
+			return reverseLinkedList(L.next,LR);
+		else{
+			return LR;
+		}
+			
+	}
 }
