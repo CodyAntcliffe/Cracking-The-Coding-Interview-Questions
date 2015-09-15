@@ -11,14 +11,14 @@ public class stack {
 	
 	public stack(){
 		
-		this.values = new int[99];
+		this.values = new int[10];
 		this.head = 0;
 	}
 	
 	//Pushes a new value onto the stack
 	public void push(int a){
 		
-		if(head == 99){
+		if(head == 9){
 			System.out.println("Stack Full, Cannot Push");
 			return;
 		}

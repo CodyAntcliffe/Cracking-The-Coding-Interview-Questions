@@ -23,7 +23,7 @@ public class stackMinimum {
 	//Pushes a new value onto the stack
 		public void push(int a){
 			
-			if(this.S.head == 99){
+			if(this.S.head == 9){
 				System.out.println("Stack Full, Cannot Push");
 				return;
 			}
