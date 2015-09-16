@@ -52,8 +52,8 @@ public class SetOfStacks {
 		if(current<10){
 			stackSet[current].push(data);
 		}
-		return;
 		
+		return;
 	}
 	
 	//Pops the right-most(current)stack
@@ -71,8 +71,8 @@ public class SetOfStacks {
 		}
 		
 		System.out.println(stackSet[current].peek());
-		return stackSet[current].pop();
 		
+		return stackSet[current].pop();
 	}
 	
 	//Pops the stack located at a specific index
@@ -85,6 +85,7 @@ public class SetOfStacks {
 		}
 		
 		System.out.println(stackSet[index].peek());
+		
 		return stackSet[index].pop();
 	}
 	
@@ -102,6 +103,5 @@ public class SetOfStacks {
 		for(int i = 0; i<82; i++){
 			S.pop();
 		}
-	
 	}
 }

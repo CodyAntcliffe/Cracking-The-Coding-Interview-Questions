@@ -8,7 +8,6 @@ public class stack {
 	int[] values; //Holds our values
 	int head; //The 'top' of the stack
 
-	
 	public stack(){
 		
 		this.values = new int[10];
