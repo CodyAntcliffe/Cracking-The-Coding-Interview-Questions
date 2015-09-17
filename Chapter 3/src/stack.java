@@ -39,9 +39,22 @@ public class stack {
 	}
 	
 	//Returns the top of the stack without popping
-	public int peek(){
+	public int peek() throws NullPointerException{
 		
-		return this.values[head-1];
+		if(this.isEmpty()){
+			return -1;
+		}
+		else
+			return this.values[head-1];
+	}
+	
+	public Boolean isEmpty(){
+		
+		if(this.head == 0){
+			return true;
+		}
+		else
+			return false;
 	}
 	
 }
