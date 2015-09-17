@@ -25,7 +25,7 @@ public class SetOfStacks {
 	
 	public void push(int data){
 		
-		//Check if current>9
+		//Check if current>max
 		if(current>9){
 			//If it is, say that it is now full. Recommend creating a new SetOfStacks
 			current --;
@@ -93,6 +93,7 @@ public class SetOfStacks {
 		
 		SetOfStacks S = new SetOfStacks();
 	
+		//Values mean nothing.  Assumes max = 9.
 		for(int i = 0; i<82; i++){
 			S.push(i);
 		}

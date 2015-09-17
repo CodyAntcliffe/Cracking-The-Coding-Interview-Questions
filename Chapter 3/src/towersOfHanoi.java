@@ -31,24 +31,24 @@ public class towersOfHanoi {
 		
 	}
 	
-	public void makeMove(){
-		
-		//If B and C both empty
-		if(B.isEmpty() ){
-			if(!A.isEmpty()){
-				if(!C.isEmpty()){
-					if(C.peek())
-				}
-			}
-		}
-	}
+//	public void makeMove(){
+//		
+//		//If B and C both empty
+//		if(B.isEmpty() ){
+//			if(!A.isEmpty()){
+//				if(!C.isEmpty()){
+//					if(C.peek())
+//				}
+//			}
+//		}
+//	}
 	
 	public static void main(String[] args){
 		
 		towersOfHanoi T = new towersOfHanoi();
 		
 		System.out.println(T.A.peek());
-		T.makeMove();
+//		T.makeMove();
 	}
 	
 }
