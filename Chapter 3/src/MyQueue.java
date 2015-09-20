@@ -40,6 +40,7 @@ public class MyQueue {
 			else
 				this.makeQueue();
 		}
+		B.pop();
 	}
 	
 	//Now we need a way to move from stack A to stack B. IE//Make the two stacks into a queue.
@@ -56,6 +57,7 @@ public class MyQueue {
 		MyQueue M = new MyQueue();
 		
 		M.enQueue(1);
+		M.makeQueue();
 		M.deQueue();
 	}
 	
