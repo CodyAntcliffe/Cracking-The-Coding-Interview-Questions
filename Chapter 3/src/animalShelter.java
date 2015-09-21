@@ -18,6 +18,12 @@ public class animalShelter {
 	
 	LinkedList animals = new LinkedList();
 	
+	public animalShelter(){
+		cats = new MyQueue();
+		dogs = new MyQueue();
+		nextAnimal  = 0;
+		
+	}
 	//ID can be either 1 for Cat, or 2 for Dog.
 	public void enqueue(int ID){
 		
@@ -38,22 +44,51 @@ public class animalShelter {
 	//Dequeues the "oldest" animal, either Dog or Cat.
 	public void dequeueAny(){
 		
-		if(dogs.B.peek() <  cats.B.peek()){
-			
+		if(cats.isEmpty()&& dogs.isEmpty()){
+			System.out.println("Shelter is empty!");
+			return;
 		}
+		if(!cats.isEmpty() && !dogs.isEmpty()){
+			if(cats.peek()<dogs.peek()){
+				dequeueCat();
+				return;
+			}
+			else{
+				dequeueDog();
+				return;
+			}
+		}
+		if(cats.isEmpty() && !dogs.isEmpty()){
+			dequeueDog();
+			return;
+		}
+		if(dogs.isEmpty() && !cats.isEmpty()){
+			dequeueCat();
+			return;
+		}
+		
 	}
 	
 	//Dequeues the oldest Dog 
 	public void dequeueDog(){
 		
+		if(dogs.isEmpty()){
+			System.out.println("No dogs in the shelter");
+			return;
+		}
+		else
+			dogs.deQueue();
+		
 	}
 	//Dequeues the oldest Cat
 	public void dequeueCat(){
 		
-	}
-	public static void main(String[] args){
-		
-		animalShelter test = new animalShelter()
+		if(cats.isEmpty()){
+			System.out.println("No cats in the shelter");
+			return;
+		}
+		else
+			cats.deQueue();
 		
 	}
 }

@@ -34,7 +34,7 @@ public class MyQueue {
 		
 		if(B.head == 0){
 			if(A.head == 0){
-				System.out.println("Queue is empty!");
+				//System.out.println("Queue is empty!");
 				return;
 			}
 			else
@@ -50,6 +50,29 @@ public class MyQueue {
 			while(A.head != 0)
 				B.push(A.pop());
 		}
+	}
+	
+	public Boolean isEmpty(){
+		if(B.head == 0 && A.head == 0){
+			//System.out.println("IS");
+			return true;
+		}
+		else
+			return false;
+	}
+	
+	//Returns the front of the queue
+	public int peek(){
+		
+		if(B.head == 0){
+			if(A.head == 0){
+				//System.out.println("Queue is empty!");
+				return -1;
+			}
+			else
+				this.makeQueue();
+		}
+		return B.peek();
 	}
 	
 	public static void main(String[] args){
